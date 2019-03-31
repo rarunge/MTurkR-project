@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<QuestionForm xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd">
+  <Overview>
+    <Title>Please read the following passage and answer the questions below based upon what you read.</Title>
+    <Text>This questionnaire asks about things that people sometimes do to hurt themselves.
+Self-harm behavior includes but is not limited to: cutting, burning, scratching, strangling, headbanging, etc.
+Please count only instances of self-harm where the behavior was intentional (on purpose). Do NOT include times where you hurt yourself accidentally (i.e. you tripped and banged your head on accident). Do NOT include times where you intended to kill yourself (had suicidal intent).
+   </Text>
+  </Overview>
+  <Question>
+    <QuestionIdentifier>NSSI_screen</QuestionIdentifier>
+    <DisplayName>Self Harm Question</DisplayName>
+    <IsRequired>true</IsRequired>
+    <QuestionContent>
+      <FormattedContent><![CDATA[            <p>IN THE PAST YEAR, on how many separate DAYS have you engaged in any of self-harm behaviors intentionally and without suicidal intent?</p>            ]]></FormattedContent>
+    </QuestionContent>
+    <AnswerSpecification>
+      <SelectionAnswer>
+      <MinSelectionCount>1</MinSelectionCount>
+      <MaxSelectionCount>1</MaxSelectionCount>
+      <Selections>
+        <Selection>
+          <SelectionIdentifier>0</SelectionIdentifier>
+          <Text>0-4 days</Text>
+        </Selection>
+        <Selection>
+          <SelectionIdentifier>1</SelectionIdentifier>
+          <Text>5-30 days</Text>
+        </Selection>
+        <Selection>
+          <SelectionIdentifier>2</SelectionIdentifier>
+          <Text>31 or more days</Text>
+        </Selection>
+      </Selections>
+      </SelectionAnswer>
+    </AnswerSpecification>
+  </Question>
+  <Question>
+    <QuestionIdentifier>Second_Question</QuestionIdentifier>
+    <DisplayName>Second Test Question</DisplayName>
+    <IsRequired>true</IsRequired>
+    <QuestionContent>
+      <FormattedContent><![CDATA[            <p>Did this test work?</p>            ]]></FormattedContent>
+    </QuestionContent>
+    <AnswerSpecification>
+      <SelectionAnswer>
+        <StyleSuggestion>radiobutton</StyleSuggestion>
+        <Selections>
+          <Selection>
+            <SelectionIdentifier>0</SelectionIdentifier>
+            <Text>Yep</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>1</SelectionIdentifier>
+            <Text>Nope</Text>
+          </Selection>
+        </Selections>
+      </SelectionAnswer>
+    </AnswerSpecification>
+  </Question>
+</QuestionForm>
